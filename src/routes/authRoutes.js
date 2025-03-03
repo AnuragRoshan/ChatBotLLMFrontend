@@ -45,6 +45,7 @@ router.get("/status", (req, res) => {
 
   try {
     console.log("Decoded:", req.user);
+    // console.log("Decoded:", decoded);
     res.json({
       isAuthenticated: true,
       user: {
